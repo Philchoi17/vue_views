@@ -1,0 +1,1 @@
+export const starWarsCharacters = 'https://swapi.co/api/people/'
