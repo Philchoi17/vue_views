@@ -79,7 +79,7 @@
       </v-layout>
     </v-container>
     <br>
-    <router-link to='/about'>Go to review</router-link>
+    <!-- <router-link to='/about'>Go to review</router-link> -->
   </div>
 </template>
 <script>

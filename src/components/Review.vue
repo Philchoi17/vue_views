@@ -12,7 +12,8 @@
       add Name
     </button>
     <br>
-    <router-link to='/'> Go home</router-link>
+    <router-link to='/'> Go home</router-link> |
+    <router-link to='/review2'>Go to review 2</router-link>
   </div>
 </template>
 <script>
