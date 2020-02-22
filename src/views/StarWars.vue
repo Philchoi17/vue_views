@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     getCharacter() {
-      this.$store.dispatch('getCharacter', '1')
+      this.$store.dispatch('getCharacter', true)
     }
   }
 }
