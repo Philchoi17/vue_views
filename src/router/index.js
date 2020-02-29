@@ -39,6 +39,11 @@ const routes = [
     path: '/starwars',
     name: 'starwars',
     component: () => import('../views/StarWars')
+  },
+  {
+    path: '/review3',
+    name: 'review3',
+    component: () => import('../views/Review3')
   }
 ]
 

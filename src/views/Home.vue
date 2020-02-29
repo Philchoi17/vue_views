@@ -6,7 +6,8 @@
     <router-link to='/test'>test</router-link> | 
     <router-link to='/review2'>review2</router-link> | 
     <router-link to='/styling'>styling</router-link> |
-    <router-link to='/starwars'>starwars</router-link>
+    <router-link to='/starwars'>starwars</router-link> |
+    <router-link to='/review3'>review3</router-link>
   </div>
 </template>
 

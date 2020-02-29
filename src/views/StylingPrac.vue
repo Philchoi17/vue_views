@@ -1,25 +1,46 @@
 <template>
-  <div>
-    <h1>{{ this.$store.state.title }}</h1>
-
-    <h1>styling</h1>
-    <h4>{{ testModel }}</h4>
-    <h4>length of string: {{ inputToUppercase }}</h4>
-    <v-text-field v-model='testModel' />
-    <router-link to='/'>home</router-link>
-  </div>
+  <v-content>
+    <v-container>
+      <v-app-bar color="deep-purple accent-4" dense dark>
+        <!-- where the title is shown within navbar in top left -->
+        <v-toolbar-title>Vue Views</v-toolbar-title>
+        <!-- spacing between title and butons on right side -->
+        <v-spacer />
+        <!-- *buttons on right side**** -->
+        <v-btn icon to='/'>
+          <v-icon>mdi-home</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>mdi-cellphone</v-icon>
+        </v-btn>
+        <!-- *end of butons on right side**** -->
+      </v-app-bar>
+      <!-- where the carousel is under the app bar -->
+      <top-carousel />
+      <!-- company info -->
+      <styling-prac-our-info />
+    </v-container>
+  </v-content>
 </template>
 <script>
+import TopCarousel from '@/components/stylingPrac/TopCarousel'
 export default {
   data() {
     return {
-      testModel: ''
-    }
+      anyStr: 'testClass',
+      // testModel: ""
+    };
   },
-  computed: {
-    inputToUppercase() {
-      return this.testModel.length
-    }
+  // computed: {
+  //   inputToUppercase() {
+  //     return this.testModel.length;
+  //   }
+  // },
+  components: {
+    TopCarousel
   }
-}
+};
 </script>
+<style scoped>
+
+</style>
